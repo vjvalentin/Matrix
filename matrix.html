@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LED Matrix Creator</title>
+    <link rel="stylesheet" href="matrixStyle.css">
+</head>
+<body>
+    <div id="matrixContainer">
+        <div id="drawArea">
+            <canvas width="242" height="242" id="cvsMatrix"></canvas>
+            <div id="drawButtons">
+                <button id="btnClear" type="button">Clear</button>
+                <button id="btnFill" type="button">Fill</button>
+                <button id="btnInvert" type="button">Invert</button>
+            </div>
+        </div>
+
+        <div id="output">
+            
+            <textarea readonly id="txaBin"></textarea>
+            <textarea readonly id="txaHex"></textarea>
+        </div>
+    </div>
+    <script src="matrix.js"></script>
+</body>
+</html>
